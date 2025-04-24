@@ -1,19 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Resume | Shrasth Kumar</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-  <h1>Resume</h1>
+<body class="resume-bg">
 
-  <iframe src="assets/resume.pdf" width="100%" height="700px" style="border: 1px solid #ccc;"></iframe>
+  <header class="navbar">
+    <div class="nav-left">
+      <span class="nav-logo">Shrasth Kumar</span>
+    </div>
+    <nav class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html" class="active">Resume</a>
+    </nav>
+  </header>
 
-  <p>
-    <a class="button" href="assets/resume.pdf" download>
-      📥 Download Resume (PDF)
-    </a>
-  </p>
+  <main class="resume-container">
+    <h1><span class="dot"></span> Data Analytics Portfolio</h1>
+    <a class="button download-btn" href="assets/resume.pdf" download>Download Resume</a>
+
+    <!-- Experience Section -->
+    <section>
+      <h2>Experience</h2>
+
+      <div class="card">
+        <div class="left">
+          <strong>Jan 2024 – Apr 2024</strong><br>
+          <span>Data Analyst Intern</span><br>
+          <small>Capstone Client Project</small><br>
+          <small>Ontario, CA</small>
+        </div>
+        <div class="right">
+          <p>During my internship, I worked on a client project where I built Power BI dashboards to visualize campaign ROI, user segmentation, and behavioral trends. I developed ETL pipelines to automate data ingestion and model scoring, improving accuracy and governance.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="left">
+          <strong>Sept 2019 – Jul 2023</strong><br>
+          <span>ML Data Associate I</span><br>
+          <small>Amazon</small><br>
+          <small>Hyderabad, India</small>
+        </div>
+        <div class="right">
+          <p>At Amazon, I worked with large-scale customer experience datasets to support QA analysis and performance reporting. I developed dashboards and collaborated with engineering teams to improve tagging logic and data quality. I identified recurring issues and implemented solutions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section>
+      <h2>Education</h2>
+
+      <div class="card">
+        <div class="left">
+          <strong>2023 – 2025</strong><br>
+          <span>Postgraduate Certificate</span><br>
+          <small>Big Data Analytics & AI, Georgian College</small><br>
+          <small>Barrie, Ontario</small>
+        </div>
+        <div class="right">
+          <p>Completed a program with a focus on big data technologies, machine learning, and artificial intelligence. Capstone included fraud detection dashboard development and KPI visualization.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="left">
+          <strong>2015 – 2019</strong><br>
+          <span>Bachelor of Technology</span><br>
+          <small>Vignan University</small><br>
+          <small>Hyderabad, India</small>
+        </div>
+        <div class="right">
+          <p>Majored in Mechanical Engineering with hands-on training in CAD tools including AutoCAD, CATIA, and SolidWorks. Focused on product design and applied software to mechanical system simulations.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section>
+      <h2>Professional Skillset</h2>
+
+      <ul class="skills">
+        <li>📊 Data Analysis & Visualization</li>
+        <li>🧠 Machine Learning</li>
+        <li>🧮 SQL & Python Programming</li>
+        <li>📈 Dashboard Development (Power BI, Tableau)</li>
+        <li>⚙️ ETL & Data Pipeline Automation</li>
+      </ul>
+
+      <h2>Tools & Technologies</h2>
+      <ul class="skills">
+        <li>Python</li>
+        <li>SQL</li>
+        <li>Tableau</li>
+        <li>Power BI</li>
+        <li>Scikit-learn</li>
+      </ul>
+    </section>
+  </main>
+
 </body>
 </html>
