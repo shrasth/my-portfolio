@@ -68,40 +68,44 @@
 
   <!-- ✅ Particle background config -->
   <script>
-    particlesJS("particles-js", {
-      "particles": {
-        "number": { "value": 75, "density": { "enable": true, "value_area": 900 }},
-        "color": { "value": "#888" },
-        "shape": { "type": "circle" },
-        "opacity": { "value": 0.3 },
-        "size": { "value": 3, "random": true },
-        "line_linked": {
-          "enable": true,
-          "distance": 150,
-          "color": "#ccc",
-          "opacity": 0.3,
-          "width": 1
-        },
-        "move": {
-          "enable": true,
-          "speed": 2,
-          "direction": "none",
-          "out_mode": "out"
-        }
-      },
-      "interactivity": {
-        "detect_on": "canvas",
-        "events": {
-          "onhover": { "enable": true, "mode": "repulse" },
-          "onclick": { "enable": false },
-          "resize": true
-        },
-        "modes": {
-          "repulse": { "distance": 100 }
-        }
-      },
-      "retina_detect": true
-    });
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 75,
+      "density": { "enable": true, "value_area": 900 }
+    },
+    "color": { "value": "#333" }, // darker dots
+    "shape": { "type": "circle" },
+    "opacity": { "value": 0.7 },  // bolder dots
+    "size": { "value": 3, "random": true },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#666",          // darker connecting lines
+      "opacity": 0.6,           // more visible
+      "width": 1.2
+    },
+    "move": {
+      "enable": true,
+      "speed": 2,
+      "direction": "none",
+      "out_mode": "out"
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": { "enable": true, "mode": "repulse" },
+      "onclick": { "enable": false },
+      "resize": true
+    },
+    "modes": {
+      "repulse": { "distance": 100 }
+    }
+  },
+  "retina_detect": true
+});
+
   </script>
 
 </body>
