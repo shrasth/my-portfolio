@@ -3,13 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>Shrasth Kumar | Portfolio</title>
-  <link rel="stylesheet" href="assets/style.css">
-  <!-- Font Awesome for GitHub and LinkedIn icons -->
+
+  <!-- Font Awesome for social icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/style.css">
+  <!-- Particles.js library -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
 
-  <!-- Navigation Bar -->
+  <!-- ✅ Particle background container -->
+  <div id="particles-js"></div>
+
+  <!-- ✅ Navigation Bar -->
   <header class="navbar">
     <div class="nav-left">
       <span class="nav-logo">Shrasth Kumar</span>
@@ -27,7 +34,7 @@
     </nav>
   </header>
 
-  <!-- Two-Column Hero Section -->
+  <!-- ✅ Two-Column Hero Section -->
   <section class="split-hero">
 
     <!-- LEFT SIDE: Profile -->
@@ -58,6 +65,44 @@
     </div>
 
   </section>
+
+  <!-- ✅ Particle background config -->
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 75, "density": { "enable": true, "value_area": 900 }},
+        "color": { "value": "#888" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.3 },
+        "size": { "value": 3, "random": true },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ccc",
+          "opacity": 0.3,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 2,
+          "direction": "none",
+          "out_mode": "out"
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": { "enable": true, "mode": "repulse" },
+          "onclick": { "enable": false },
+          "resize": true
+        },
+        "modes": {
+          "repulse": { "distance": 100 }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
 
 </body>
 </html>
