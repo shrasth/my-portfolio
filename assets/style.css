@@ -234,3 +234,80 @@
   font-weight: bold;
   text-decoration: none;
 }
+/* Page Intro Styling */
+.section-intro {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 30px;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+/* Project Card Layout - Vertical */
+.project-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+}
+.project-vertical .project-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.project-vertical .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+.project-vertical .project-card h4 {
+  font-weight: normal;
+  color: #777;
+  margin: 0;
+}
+.project-vertical .project-card h3 {
+  margin: 6px 0 10px;
+  font-size: 20px;
+}
+.project-vertical .project-card p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+.project-vertical .project-card a {
+  color: #0057D9;
+  font-weight: bold;
+  text-decoration: none;
+}
+.project-vertical .project-card a:hover {
+  text-decoration: underline;
+}
+
+/* Full Nav (Already Exists But Ensure It's Present) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav-logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.nav-right a {
+  margin-left: 20px;
+  color: #0057D9;
+  text-decoration: none;
+  font-size: 15px;
+}
+.nav-right a:hover {
+  text-decoration: underline;
+}
+.nav-right i {
+  margin-right: 5px;
+}
