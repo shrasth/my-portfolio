@@ -1,61 +1,112 @@
-body {
-    font-family: 'Segoe UI', sans-serif;
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px;
-    color: #333;
+/* NAVIGATION BAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
-  header {
-    margin-bottom: 30px;
+  .nav-logo {
+    font-size: 1.3rem;
+    font-weight: bold;
   }
-  nav a {
-    margin-right: 20px;
-    text-decoration: none;
+  .nav-right a {
+    margin-left: 20px;
     color: #0057D9;
+    text-decoration: none;
+    font-size: 15px;
   }
-  .hero {
+  .nav-right a:hover {
+    text-decoration: underline;
+  }
+  .nav-right i {
+    margin-right: 5px;
+  }
+  
+  /* TWO-COLUMN HERO SECTION */
+  .split-hero {
+    display: flex;
+    flex-direction: row;
+    min-height: 85vh;
+  }
+  
+  /* LEFT (Photo, Name) */
+  .hero-left {
+    flex: 1;
+    background: #e9ded4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
     text-align: center;
   }
   .profile-img {
-    width: 120px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  .role {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 5px 0 20px;
+    color: #666;
+  }
+  .hero-icons a {
+    font-size: 20px;
+    color: #333;
+    margin: 0 10px;
+  }
+  .hero-icons a:hover {
+    color: #0057D9;
+  }
+  
+  /* RIGHT (Text + Buttons) */
+  .hero-right {
+    flex: 2;
+    background: #fff;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero-right h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+  .hero-right h3 {
+    margin-top: 15px;
+    font-weight: 500;
+  }
+  .hero-right p {
+    margin: 20px 0;
+    line-height: 1.6;
+    max-width: 600px;
+  }
+  .hero-buttons {
+    margin-top: 20px;
   }
   .button {
-    background: #0057D9;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: #0057D9;
+    color: white;
+    padding: 10px 22px;
+    margin: 0 10px;
     text-decoration: none;
-    margin: 10px;
-    display: inline-block;
-    border-radius: 4px;
+    border-radius: 5px;
+    font-weight: 500;
   }
   .button.outline {
-    background: none;
+    background: transparent;
     color: #0057D9;
     border: 2px solid #0057D9;
   }
-  .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  .project-card {
-    border: 1px solid #ccc;
-    padding: 15px;
-    border-radius: 6px;
-    background: #f9f9f9;
-  }
-  .project-card img {
-    max-width: 100%;
-    border-radius: 4px;
-  }
-  .social-links {
-    margin-top: 10px;
-    font-size: 16px;
-  }
-  .social-links a {
-    color: #0057D9;
-    text-decoration: none;
-    margin: 0 10px;
+  .button:hover {
+    opacity: 0.9;
   }
   
