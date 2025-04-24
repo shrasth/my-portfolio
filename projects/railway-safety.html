@@ -2,23 +2,34 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Railway Safety Analysis</title>
+  <title>Railway Safety Project</title>
   <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
-  <h1>Railway Safety Dashboard</h1>
-  <p>This project explores historical rail incidents in Canada using Tableau dashboards and interactive maps.</p>
+  <h1>Railway Safety Analysis</h1>
+
+  <p><strong>Role:</strong> Data Analyst | <strong>Tools:</strong> Python, Tableau, Folium</p>
+
+  <p>This project explores over 20 years of rail incident data in Canada. Using Python and SQL for data cleaning and Tableau for interactive dashboards, the goal was to help stakeholders visualize risk over time.</p>
 
   <h2>📊 Tableau Dashboard</h2>
   <iframe src="https://public.tableau.com/views/Final_17438110426760/FinalIncident?:embed=true&:display_count=yes"
           width="100%" height="600px" style="border:none;"></iframe>
 
-  <h2>🗺️ Interactive Map</h2>
+  <h2>🧭 Interactive Map</h2>
   <iframe src="../dashboards/map-railway.html" width="100%" height="500px"></iframe>
 
-  <h2>🔧 Tools Used</h2>
-  <pre>Python, Pandas, Folium, Tableau</pre>
+  <h2>🧪 Python Snippet</h2>
+  <pre>
+import pandas as pd
+import matplotlib.pyplot as plt
 
-  <p><a href="../projects.html">← Back to Projects</a></p>
+df = pd.read_csv("rail_incidents.csv")
+plt.hist(df['year'], bins=20)
+plt.title("Incidents Over Time")
+plt.show()
+  </pre>
+
+  <a href="../projects.html">← Back to Projects</a>
 </body>
 </html>
