@@ -1,33 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Shrasth Kumar | Portfolio</title>
   <link rel="stylesheet" href="assets/style.css">
+  <!-- Font Awesome for GitHub and LinkedIn icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Shrasth Kumar</h1>
-    <nav>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-left">
+      <span class="nav-logo">Shrasth Kumar</span>
+    </div>
+    <nav class="nav-right">
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
       <a href="resume.html">Resume</a>
+      <a href="https://github.com/shrasth?tab=repositories" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/shrasth-kumar-0b7287150/" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
     </nav>
   </header>
 
-  <section class="hero">
-    <img src="assets/images/profile.jpg" class="profile-img" alt="Shrasth Kumar">
-    <h2>Welcome</h2>
-    <p>Data Analyst | Dashboard Design | Machine Learning Enthusiast</p>
+  <!-- Two-Column Hero Section -->
+  <section class="split-hero">
 
-    <div class="social-links">
-      <a href="https://github.com/shrasth?tab=repositories" target="_blank">GitHub</a> |
-      <a href="https://www.linkedin.com/in/shrasth-kumar-0b7287150/" target="_blank">LinkedIn</a>
+    <!-- LEFT SIDE: Profile -->
+    <div class="hero-left">
+      <img src="assets/images/profile.jpg" class="profile-img" alt="Shrasth Kumar">
+      <h3>Shrasth Kumar</h3>
+      <p class="role">Data Analyst</p>
+      <div class="hero-icons">
+        <a href="https://github.com/shrasth?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/shrasth-kumar-0b7287150/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
     </div>
 
-    <br>
-    <a class="button" href="projects.html">View Projects</a>
-    <a class="button outline" href="resume.html">Download Resume</a>
+    <!-- RIGHT SIDE: Introduction -->
+    <div class="hero-right">
+      <h1>Hello</h1>
+      <h3>Showcasing Data Projects & Analytics Expertise</h3>
+      <p>
+        This portfolio highlights a range of data projects focused on analytics, visualization, and machine learning.
+        It features interactive dashboards, code samples, and case studies using tools like Python, SQL, Tableau,
+        and Power BI. Through these projects, I demonstrate my experience in business analytics and data storytelling
+        across domains.
+      </p>
+      <div class="hero-buttons">
+        <a class="button" href="resume.html">View Resume</a>
+        <a class="button outline" href="projects.html">View Projects</a>
+      </div>
+    </div>
+
   </section>
+
 </body>
 </html>
