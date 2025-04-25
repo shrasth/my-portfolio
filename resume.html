@@ -4,23 +4,23 @@
   <meta charset="UTF-8">
   <title>Resume | Shrasth Kumar</title>
   <link rel="stylesheet" href="assets/style.css">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body class="resume-bg">
 
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+
   <header class="navbar">
-    <div class="nav-left">
-      <span class="nav-logo">Shrasth Kumar</span>
-    </div>
     <nav class="nav-right">
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
-      <a href="resume.html" class="active">Resume</a>
     </nav>
   </header>
 
   <main class="resume-container">
     <h1><span class="dot"></span> Data Analytics Portfolio</h1>
-    <a class="button download-btn" href="assets/resume.pdf" download>Download Resume</a>
+    <a class="button download-btn" href="assets/resume.pdf" download>Download Resume (PDF)</a>
 
     <!-- Experience Section -->
     <section>
@@ -34,7 +34,7 @@
           <small>Ontario, CA</small>
         </div>
         <div class="right">
-          <p>During my internship, I worked on a client project where I built Power BI dashboards to visualize campaign ROI, user segmentation, and behavioral trends. I developed ETL pipelines to automate data ingestion and model scoring, improving accuracy and governance.</p>
+          <p>Built Power BI dashboards to visualize campaign ROI, user segmentation, and behavioral trends. Developed ETL pipelines to automate data ingestion and model scoring, improving governance.</p>
         </div>
       </div>
 
@@ -46,7 +46,7 @@
           <small>Hyderabad, India</small>
         </div>
         <div class="right">
-          <p>At Amazon, I worked with large-scale customer experience datasets to support QA analysis and performance reporting. I developed dashboards and collaborated with engineering teams to improve tagging logic and data quality. I identified recurring issues and implemented solutions.</p>
+          <p>Worked with large-scale datasets to support QA reporting. Built dashboards, collaborated with engineering teams to improve tagging logic and data accuracy.</p>
         </div>
       </div>
     </section>
@@ -63,7 +63,7 @@
           <small>Barrie, Ontario</small>
         </div>
         <div class="right">
-          <p>Completed a program with a focus on big data technologies, machine learning, and artificial intelligence. Capstone included fraud detection dashboard development and KPI visualization.</p>
+          <p>Program focused on big data, machine learning, and AI. Capstone included fraud detection dashboard and KPI visualization.</p>
         </div>
       </div>
 
@@ -75,39 +75,77 @@
           <small>Hyderabad, India</small>
         </div>
         <div class="right">
-          <p>Majored in Mechanical Engineering with hands-on training in CAD tools including AutoCAD, CATIA, and SolidWorks. Focused on product design and applied software to mechanical system simulations.</p>
+          <p>Mechanical Engineering with CAD software experience (AutoCAD, CATIA, SolidWorks). Focused on product design and simulation.</p>
         </div>
       </div>
     </section>
 
-    <!-- Skills Section -->
-<!-- Skillset Section -->
-<section>
-  <h2>Professional Skillset</h2>
+    <!-- Skillset Section -->
+    <section>
+      <h2>Professional Skillset</h2>
+      <div class="card">
+        <ul class="skill-list">
+          <li>📊 Data Analysis & Visualization</li>
+          <li>🧠 Machine Learning</li>
+          <li>🧮 SQL & Python Programming</li>
+          <li>📈 Dashboard Development (Power BI, Tableau)</li>
+          <li>⚙️ ETL & Data Pipeline Automation</li>
+        </ul>
+      </div>
+    </section>
 
-  <div class="card">
-    <ul class="skill-list">
-      <li>📊 Data Analysis & Visualization</li>
-      <li>🧠 Machine Learning</li>
-      <li>🧮 SQL & Python Programming</li>
-      <li>📈 Dashboard Development (Power BI, Tableau)</li>
-      <li>⚙️ ETL & Data Pipeline Automation</li>
-    </ul>
-  </div>
-</section>
+    <!-- Tools Section -->
+    <section>
+      <h2>Tools & Technologies</h2>
+      <div class="card">
+        <ul class="tool-list">
+          <li>Python</li>
+          <li>SQL</li>
+          <li>Tableau</li>
+          <li>Power BI</li>
+          <li>Scikit-learn</li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
-<!-- Tools Section -->
-<section>
-  <h2>Tools & Technologies</h2>
+  <!-- Particle JS Config -->
+  <script>
+    const isDark = document.body.classList.contains('dark');
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: isDark ? "#ffffff" : "#999" },
+        shape: { type: "circle" },
+        opacity: { value: 0.7 },
+        size: { value: 3, random: true },
+        line_linked: {
+          enable: true,
+          distance: 130,
+          color: isDark ? "#ffffff" : "#ccc",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 1.2,
+          direction: "none",
+          out_mode: "out"
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          resize: true
+        },
+        modes: {
+          repulse: { distance: 150, duration: 0.4 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
 
-  <div class="card">
-    <ul class="tool-list">
-      <li>Python</li>
-      <li>SQL</li>
-      <li>Tableau</li>
-      <li>Power BI</li>
-      <li>Scikit-learn</li>
-    </ul>
-  </div>
-</section>
-
+</body>
+</html>
