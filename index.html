@@ -9,12 +9,10 @@
 </head>
 <body>
 
-  <!-- Background particle effect -->
+  <!-- Background Particles -->
   <div id="particles-js"></div>
 
-  <!-- Removed top nav for cleaner layout -->
-
-  <!-- Centered Hero Section -->
+  <!-- Hero Section -->
   <main class="centered-hero">
     <img src="assets/images/profile.jpg" alt="Shrasth Kumar" class="avatar">
     <h1>Shrasth Kumar</h1>
@@ -38,39 +36,43 @@
     </div>
   </main>
 
-  <!-- Particle config -->
+  <!-- Particles.js Configuration -->
   <script>
     particlesJS("particles-js", {
       particles: {
         number: { value: 80, density: { enable: true, value_area: 800 } },
-        color: { value: "#aaa" },
+        color: { value: "#aaa" }, // soft grey dots
         shape: { type: "circle" },
         opacity: { value: 0.8 },
         size: { value: 4, random: true },
         line_linked: {
           enable: true,
           distance: 130,
-          color: "#ccc",
+          color: "#ccc", // soft grey lines
           opacity: 0.5,
           width: 1
         },
-        move: { enable: true, speed: 1.5, direction: "none", out_mode: "out" }
+        move: {
+          enable: true,
+          speed: 1.5,
+          direction: "none",
+          out_mode: "out"
+        }
       },
-interactivity: {
-  detect_on: "canvas",
-  events: {
-    onhover: { enable: true, mode: "repulse" },
-    onclick: { enable: false },
-    resize: true
-  },
-  modes: {
-    repulse: {
-      distance: 180,    // increase the hover "repel" radius
-      duration: 0.6     // smooth recoil animation
-    }
-  }
-}
-
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: false },
+          resize: true
+        },
+        modes: {
+          repulse: {
+            distance: 180,
+            duration: 0.6
+          }
+        }
+      },
       retina_detect: true
     });
   </script>
