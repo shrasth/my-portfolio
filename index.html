@@ -9,32 +9,17 @@
 </head>
 <body>
 
-  <!-- Background effect -->
+  <!-- Background particle effect -->
   <div id="particles-js"></div>
 
-  <!-- Top Navigation -->
-  <header class="navbar">
-    <div class="nav-left">
-      <span class="nav-logo">Shrasth Kumar</span>
-    </div>
-    <nav class="nav-right">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="resume.html">Resume</a>
-      <a href="https://github.com/shrasth?tab=repositories" target="_blank">
-        <i class="fab fa-github"></i> GitHub
-      </a>
-      <a href="https://www.linkedin.com/in/shrasth-kumar-0b7287150/" target="_blank">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
-    </nav>
-  </header>
+  <!-- Removed top nav for cleaner layout -->
 
-  <!-- Hero Section -->
+  <!-- Centered Hero Section -->
   <main class="centered-hero">
     <img src="assets/images/profile.jpg" alt="Shrasth Kumar" class="avatar">
     <h1>Shrasth Kumar</h1>
     <h3 class="subtitle">Data Analyst</h3>
+
     <p class="hero-intro">
       Showcasing Data Projects & Analytics Expertise. This portfolio highlights a range of data projects focused on analytics, visualization, and machine learning.
       It features interactive dashboards, code samples, and case studies using tools like Python, SQL, Tableau, and Power BI.
@@ -49,10 +34,11 @@
     <div class="hero-buttons">
       <a class="button" href="resume.html">View Resume</a>
       <a class="button outline" href="projects.html">View Projects</a>
+      <a class="button outline" href="contact.html">Contact Me</a>
     </div>
   </main>
 
-  <!-- Particles config -->
+  <!-- Particle config -->
   <script>
     particlesJS("particles-js", {
       particles: {
@@ -70,15 +56,21 @@
         },
         move: { enable: true, speed: 1.5, direction: "none", out_mode: "out" }
       },
-      interactivity: {
-        detect_on: "canvas",
-        events: {
-          onhover: { enable: true, mode: "repulse" },
-          onclick: { enable: false },
-          resize: true
-        },
-        modes: { repulse: { distance: 100 } }
-      },
+interactivity: {
+  detect_on: "canvas",
+  events: {
+    onhover: { enable: true, mode: "repulse" },
+    onclick: { enable: false },
+    resize: true
+  },
+  modes: {
+    repulse: {
+      distance: 180,    // increase the hover "repel" radius
+      duration: 0.6     // smooth recoil animation
+    }
+  }
+}
+
       retina_detect: true
     });
   </script>
