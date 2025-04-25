@@ -1,94 +1,37 @@
-/* Resume Page Styles */
-.resume-bg {
-  background: #fff;
-  color: #333;
-  padding: 60px 20px 40px;
-  overflow-x: hidden;
+/* === Homepage Avatar (ONLY homepage) === */
+.centered-hero .avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
 }
 
-.resume-container {
-  max-width: 900px;
+/* === Centered Layout === */
+.centered-hero {
+  text-align: center;
+  padding: 80px 20px;
+  max-width: 750px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
 }
 
-.resume-container h1 {
-  text-align: center;
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-.download-btn {
-  display: inline-block;
-  margin: 10px auto 30px;
-  padding: 10px 22px;
-  font-weight: 500;
+/* === Theme Toggle Button === */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  padding: 8px 12px;
   border-radius: 6px;
-  border: 2px solid #0057d9;
-  background: #0057d9;
-  color: white;
-  text-decoration: none;
-  text-align: center;
+  background: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
 }
-
-.download-btn:hover {
-  background: #003ea1;
-}
-
-/* Cards */
-.card {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  background: #f9f9f9;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  border-radius: 10px;
-  margin-bottom: 25px;
-  gap: 20px;
-}
-
-.card .left {
-  flex: 1;
-  font-size: 15px;
-  color: #444;
-  line-height: 1.5;
-}
-
-.card .right {
-  flex: 2;
-  font-size: 15px;
-  line-height: 1.6;
-  color: #222;
-}
-
-/* Lists */
-.skill-list, .tool-list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.skill-list li,
-.tool-list li {
-  margin: 8px 0;
-  font-size: 15px;
-}
-
-/* Dark Mode for Resume */
-body.dark .resume-bg {
-  background: #111;
-  color: #eee;
-}
-body.dark .card {
-  background: #1c1c1c;
-  color: #ddd;
-}
-body.dark .download-btn {
+body.dark .theme-toggle {
   background: #333;
-  border-color: #555;
-  color: #eee;
-}
-body.dark .download-btn:hover {
-  background: #555;
+  color: white;
 }
