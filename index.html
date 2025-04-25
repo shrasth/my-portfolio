@@ -3,20 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Shrasth Kumar | Portfolio</title>
-
-  <!-- Font Awesome for social icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <!-- Main CSS -->
   <link rel="stylesheet" href="assets/style.css">
-  <!-- Particles.js library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
 
-  <!-- ✅ Particle background container -->
+  <!-- Background effect -->
   <div id="particles-js"></div>
 
-  <!-- ✅ Navigation Bar -->
+  <!-- Top Navigation -->
   <header class="navbar">
     <div class="nav-left">
       <span class="nav-logo">Shrasth Kumar</span>
@@ -34,78 +30,57 @@
     </nav>
   </header>
 
-  <!-- ✅ Two-Column Hero Section -->
-  <section class="split-hero">
+  <!-- Hero Section -->
+  <main class="centered-hero">
+    <img src="assets/images/profile.jpg" alt="Shrasth Kumar" class="avatar">
+    <h1>Shrasth Kumar</h1>
+    <h3 class="subtitle">Data Analyst</h3>
+    <p class="hero-intro">
+      Showcasing Data Projects & Analytics Expertise. This portfolio highlights a range of data projects focused on analytics, visualization, and machine learning.
+      It features interactive dashboards, code samples, and case studies using tools like Python, SQL, Tableau, and Power BI.
+      Through these projects, I demonstrate my experience in business analytics and data storytelling across domains.
+    </p>
 
-    <!-- LEFT SIDE: Profile -->
-    <div class="hero-left">
-      <img src="assets/images/profile.jpg" class="profile-img" alt="Shrasth Kumar">
-      <h3>Shrasth Kumar</h3>
-      <p class="role">Data Analyst</p>
-      <div class="hero-icons">
-        <a href="https://github.com/shrasth?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/shrasth-kumar-0b7287150/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      </div>
+    <div class="social-icons">
+      <a href="https://github.com/shrasth?tab=repositories" target="_blank" class="circle-icon"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/shrasth-kumar-0b7287150/" target="_blank" class="circle-icon"><i class="fab fa-linkedin-in"></i></a>
     </div>
 
-    <!-- RIGHT SIDE: Introduction -->
-    <div class="hero-right">
-      <h1>Hello</h1>
-      <h3>Showcasing Data Projects & Analytics Expertise</h3>
-      <p>
-        This portfolio highlights a range of data projects focused on analytics, visualization, and machine learning.
-        It features interactive dashboards, code samples, and case studies using tools like Python, SQL, Tableau,
-        and Power BI. Through these projects, I demonstrate my experience in business analytics and data storytelling
-        across domains.
-      </p>
-      <div class="hero-buttons">
-        <a class="button" href="resume.html">View Resume</a>
-        <a class="button outline" href="projects.html">View Projects</a>
-      </div>
+    <div class="hero-buttons">
+      <a class="button" href="resume.html">View Resume</a>
+      <a class="button outline" href="projects.html">View Projects</a>
     </div>
+  </main>
 
-  </section>
-
-  <!-- ✅ Particle background config -->
+  <!-- Particles config -->
   <script>
-particlesJS("particles-js", {
-  "particles": {
-    "number": {
-      "value": 75,
-      "density": { "enable": true, "value_area": 900 }
-    },
-    "color": { "value": "#333" }, // darker dots
-    "shape": { "type": "circle" },
-    "opacity": { "value": 0.7 },  // bolder dots
-    "size": { "value": 3, "random": true },
-    "line_linked": {
-      "enable": true,
-      "distance": 150,
-      "color": "#666",          // darker connecting lines
-      "opacity": 0.6,           // more visible
-      "width": 1.2
-    },
-    "move": {
-      "enable": true,
-      "speed": 2,
-      "direction": "none",
-      "out_mode": "out"
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": { "enable": true, "mode": "repulse" },
-      "onclick": { "enable": false },
-      "resize": true
-    },
-    "modes": {
-      "repulse": { "distance": 100 }
-    }
-  },
-  "retina_detect": true
-});
-
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: "#444" },
+        shape: { type: "circle" },
+        opacity: { value: 0.8 },
+        size: { value: 4, random: true },
+        line_linked: {
+          enable: true,
+          distance: 130,
+          color: "#888",
+          opacity: 0.5,
+          width: 1
+        },
+        move: { enable: true, speed: 1.5, direction: "none", out_mode: "out" }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: false },
+          resize: true
+        },
+        modes: { repulse: { distance: 100 } }
+      },
+      retina_detect: true
+    });
   </script>
 
 </body>
