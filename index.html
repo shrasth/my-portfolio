@@ -36,9 +36,9 @@
     </div>
   </main>
 
-  <!-- Particles Script -->
+  <!-- Particles Logic Only -->
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    function initParticles() {
       particlesJS("particles-js", {
         particles: {
           number: { value: 80, density: { enable: true, value_area: 800 } },
@@ -73,6 +73,13 @@
         },
         retina_detect: true
       });
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      // Clear any previously saved theme
+      localStorage.removeItem("theme");
+      document.body.classList.remove("dark");
+      initParticles();
     });
   </script>
 
