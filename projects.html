@@ -1,63 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Projects | Shrasth Kumar</title>
-  <link rel="stylesheet" href="assets/style.css">
-  <!-- Font Awesome for social icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
-<body class="resume-bg">
+<body class="projects-page">
 
-  <!-- ✅ Full navigation bar -->
-  <header class="navbar">
+  <!-- Top Navigation (just Home & Resume) -->
+  <header class="simple-nav">
     <div class="nav-left">
-      <span class="nav-logo">Shrasth Kumar</span>
-    </div>
-    <nav class="nav-right">
       <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
       <a href="resume.html">Resume</a>
-      <a href="https://github.com/shrasth?tab=repositories" target="_blank">
-        <i class="fab fa-github"></i> GitHub
-      </a>
-      <a href="https://www.linkedin.com/in/shrasth-kumar-0b7287150/" target="_blank">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
-    </nav>
+    </div>
   </header>
 
   <main class="resume-container">
-    <h1><span class="dot"></span> Data Analytics Projects</h1>
-    <p class="section-intro">
+    <h1>Data Analytics Projects</h1>
+    <p>
       Explore a collection of data projects I've developed, covering analytics, dashboards, automation, and data storytelling.
       Click a project to learn more and view embedded dashboards, maps, or Python code.
     </p>
 
-    <div class="project-vertical">
+    <section class="resume-box">
+      <h3>Railway Safety</h3>
+      <h2>Railway Safety Analysis</h2>
+      <p>Visualized 20 years of Canadian rail incidents with Tableau & Python.</p>
+      <a href="projects/railway-safety.html">View Project →</a>
+    </section>
 
-      <div class="project-card">
-        <h4>Railway Safety</h4>
-        <h3>Railway Safety Analysis</h3>
-        <p>Visualized 20 years of Canadian rail incidents with Tableau & Python.</p>
-        <a href="projects/railway.html" target="_blank">View Project →</a>
-      </div>
+    <section class="resume-box">
+      <h3>Fraud Detection</h3>
+      <h2>Insurance Fraud Detection</h2>
+      <p>Built an ML pipeline + Power BI dashboards for insurance claims.</p>
+      <a href="projects/fraud-detection.html">View Project →</a>
+    </section>
 
-      <div class="project-card">
-        <h4>Fraud Detection</h4>
-        <h3>Insurance Fraud Detection</h3>
-        <p>Built an ML pipeline + Power BI dashboards for insurance claims.</p>
-        <a href="projects/fraud.html" target="_blank">View Project →</a>
-      </div>
-
-      <div class="project-card">
-        <h4>Sales Dashboard</h4>
-        <h3>Marketing Dashboard</h3>
-        <p>Designed an end-to-end data visualization dashboard using Tableau.</p>
-        <a href="projects/dashboard.html" target="_blank">View Project →</a>
-      </div>
-
-    </div>
+    <section class="resume-box">
+      <h3>Sales Dashboard</h3>
+      <h2>Marketing Dashboard</h2>
+      <p>Designed an end-to-end data visualization dashboard using Tableau.</p>
+      <a href="#">View Project →</a>
+    </section>
   </main>
+
 </body>
 </html>
