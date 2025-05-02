@@ -1,3 +1,4 @@
+
 /* === Base Reset === */
 body {
   margin: 0;
@@ -182,12 +183,6 @@ body.dark .button.outline:hover {
   color: #0057d9;
   font-weight: 500;
 }
-.resume-page.dark .simple-nav nav a {
-  color: #88c3ff; /* brighter blue for dark mode */
-}
-.resume-page.dark .simple-nav nav a:hover {
-  color: #ffffff;
-}
 .simple-nav nav a:hover {
   text-decoration: underline;
 }
@@ -244,32 +239,39 @@ body.dark .button.outline:hover {
   font-size: 15px;
 }
 
-/* === Dark Mode for Resume === */
+/* === Dark Mode for Resume (Final Fix for Link Visibility) === */
 body.resume-page.dark {
   background: #111;
   color: #eee;
 }
+
 .resume-page.dark .pill-download {
   background: #444;
 }
+
 .resume-page.dark .pill-download:hover {
   background: #666;
 }
+
 .resume-page.dark .resume-box {
   background: #1c1c1c;
   color: #eee;
 }
+
 .resume-page.dark .entry .left,
 .resume-page.dark .entry .right {
   color: #ccc;
 }
+
 .resume-page.dark .simple-nav nav a,
-.resume-page.dark .simple-nav nav a:visited {
-  color: #88c0ff !important;
+.resume-page.dark .simple-nav nav a:visited,
+.resume-page.dark .simple-nav nav a:active,
+.resume-page.dark .simple-nav nav a:focus {
+  color: #ffffff !important;
   text-decoration: none;
 }
 
 .resume-page.dark .simple-nav nav a:hover {
-  color: #ffffff !important;
+  color: #88c3ff !important;
   text-decoration: underline;
 }
