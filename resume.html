@@ -25,7 +25,6 @@
     <!-- Experience -->
     <section class="resume-box">
       <h2>Experience</h2>
-
       <div class="entry">
         <div class="left">
           <strong>Jan 2024 – Apr 2024</strong><br>
@@ -54,7 +53,6 @@
     <!-- Education -->
     <section class="resume-box">
       <h2>Education</h2>
-
       <div class="entry">
         <div class="left">
           <strong>2023 – 2025</strong><br>
@@ -104,6 +102,15 @@
       </ul>
     </section>
   </main>
+
+  <!-- Theme Sync Script -->
+  <script>
+    const root = document.body;
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      root.classList.add("dark");
+    }
+  </script>
 
 </body>
 </html>
