@@ -2,19 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resume | Shrasth Kumar</title>
   <link rel="stylesheet" href="assets/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body class="resume-page">
 
+  <!-- Sync Dark Mode on Load -->
+  <script>
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark");
+    }
+  </script>
+
+  <!-- Dark Mode Toggle -->
+  <button id="theme-toggle" class="theme-toggle">🌓</button>
+
   <!-- Top Navigation -->
   <header class="simple-nav">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-    </nav>
-    <a class="pill-download" href="assets/resume.pdf" download>Download Resume (PDF)</a>
+    <div class="nav-wrap">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+      <a class="pill-download" href="assets/resume.pdf" download>Download Resume (PDF)</a>
+    </div>
   </header>
 
   <main class="resume-container">
@@ -23,28 +36,24 @@
     <!-- Experience -->
     <section class="resume-box">
       <h2>Experience</h2>
-
       <div class="entry">
         <div class="left">
-          <strong>Jan 2024 – Apr 2024</strong><br>
-          <span>Data Analyst Intern</span><br>
-          <small>Capstone Client Project</small><br>
-          <small>Ontario, CA</small>
+          <strong>Jan 2024 – Apr 2024</strong><br />
+          <span>Data Analyst Intern</span><br />
+          <small>Capstone Client Project, Ontario</small>
         </div>
         <div class="right">
-          <p>Built Power BI dashboards to visualize campaign ROI, user segmentation, and behavioral trends. Developed ETL pipelines to automate data ingestion and model scoring, improving governance.</p>
+          <p>Built Power BI dashboards to visualize campaign ROI, user segmentation, and behavioral trends. Developed ETL pipelines to automate data ingestion and scoring models.</p>
         </div>
       </div>
-
       <div class="entry">
         <div class="left">
-          <strong>Sept 2019 – Jul 2023</strong><br>
-          <span>ML Data Associate I</span><br>
-          <small>Amazon</small><br>
-          <small>Hyderabad, India</small>
+          <strong>Sept 2019 – Jul 2023</strong><br />
+          <span>ML Data Associate I</span><br />
+          <small>Amazon, Hyderabad</small>
         </div>
         <div class="right">
-          <p>Worked with large-scale datasets to support QA reporting. Built dashboards, collaborated with engineering teams to improve tagging logic and data accuracy.</p>
+          <p>Worked with large-scale QA datasets. Built dashboards and collaborated with engineering teams to improve tagging logic and data quality monitoring.</p>
         </div>
       </div>
     </section>
@@ -52,28 +61,24 @@
     <!-- Education -->
     <section class="resume-box">
       <h2>Education</h2>
-
       <div class="entry">
         <div class="left">
-          <strong>2023 – 2025</strong><br>
-          <span>Postgraduate Certificate</span><br>
-          <small>Big Data Analytics & AI, Georgian College</small><br>
-          <small>Barrie, Ontario</small>
+          <strong>2023 – 2025</strong><br />
+          <span>Postgraduate Certificate</span><br />
+          <small>Georgian College, Barrie</small>
         </div>
         <div class="right">
-          <p>Program focused on big data, machine learning, and AI. Capstone included fraud detection dashboard and KPI visualization.</p>
+          <p>Focus on Big Data, AI & ML. Capstone involved fraud detection dashboard with KPI tracking.</p>
         </div>
       </div>
-
       <div class="entry">
         <div class="left">
-          <strong>2015 – 2019</strong><br>
-          <span>Bachelor of Technology</span><br>
-          <small>Vignan University</small><br>
-          <small>Hyderabad, India</small>
+          <strong>2015 – 2019</strong><br />
+          <span>Bachelor of Technology</span><br />
+          <small>Vignan University, Hyderabad</small>
         </div>
         <div class="right">
-          <p>Mechanical Engineering with CAD software experience (AutoCAD, CATIA, SolidWorks). Focused on product design and simulation.</p>
+          <p>Mechanical Engineering with CAD tools: AutoCAD, CATIA, SolidWorks. Focused on product design and simulation.</p>
         </div>
       </div>
     </section>
@@ -102,6 +107,17 @@
       </ul>
     </section>
   </main>
+
+  <!-- Dark Mode Toggle Logic -->
+  <script>
+    const root = document.body;
+    const toggle = document.getElementById("theme-toggle");
+
+    toggle.addEventListener("click", () => {
+      const isDark = root.classList.toggle("dark");
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+    });
+  </script>
 
 </body>
 </html>
