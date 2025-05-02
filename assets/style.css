@@ -3,12 +3,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  color: #333;
   background: #ffffff;
+  color: #333;
   transition: background 0.4s ease, color 0.4s ease;
 }
 
-/* === Particle Canvas (only used on homepage) === */
+/* === Particles === */
 #particles-js {
   position: fixed;
   top: 0;
@@ -16,10 +16,9 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: transparent;
 }
 
-/* === Homepage Layout === */
+/* === Hero Section === */
 .centered-hero {
   text-align: center;
   padding: 100px 20px 60px;
@@ -66,7 +65,7 @@ body {
   padding: 0 10px;
 }
 
-/* Social Links */
+/* === Icons === */
 .social-icons {
   display: flex;
   justify-content: center;
@@ -93,7 +92,7 @@ body {
   color: #fff;
 }
 
-/* Buttons */
+/* === Buttons === */
 .hero-buttons .button {
   display: inline-block;
   margin: 10px;
@@ -121,7 +120,7 @@ body {
   background: #f4f4f4;
 }
 
-/* === Theme Toggle === */
+/* === Theme Toggle Button === */
 .theme-toggle {
   position: fixed;
   top: 20px;
@@ -139,7 +138,7 @@ body.dark .theme-toggle {
   color: white;
 }
 
-/* === Dark Mode (Homepage) === */
+/* === Dark Mode === */
 body.dark {
   background: #111;
   color: #eee;
@@ -166,18 +165,17 @@ body.dark .button.outline:hover {
   background: #222;
 }
 
-/* === Resume Page === */
+/* === Resume Page Layout === */
 .resume-page {
-  background: #fdfdfd;
   padding: 40px 20px;
 }
 
-/* Top Navigation */
+/* Top-right nav */
 .simple-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px;
+  padding: 20px 40px;
 }
 .simple-nav nav a {
   margin-left: 20px;
@@ -188,31 +186,28 @@ body.dark .button.outline:hover {
 .simple-nav nav a:hover {
   text-decoration: underline;
 }
-
-/* Download Resume Button */
 .pill-download {
-  padding: 8px 20px;
+  padding: 10px 22px;
   background: #0057d9;
-  color: #fff;
+  color: white;
   border-radius: 30px;
-  text-decoration: none;
   font-weight: 500;
+  text-decoration: none;
   transition: background 0.3s ease;
 }
 .pill-download:hover {
   background: #003ea1;
 }
 
-/* Resume Container */
+/* Resume Section */
 .resume-container {
   max-width: 850px;
   margin: 40px auto;
 }
 .resume-container h1 {
-  margin-top: 20px;
+  margin-bottom: 35px;
 }
 
-/* Resume Box Sections */
 .resume-box {
   background: #fff;
   padding: 30px;
@@ -222,10 +217,8 @@ body.dark .button.outline:hover {
 }
 .resume-box h2 {
   margin-top: 0;
-  color: #111;
 }
 
-/* Resume Entries */
 .entry {
   display: flex;
   justify-content: space-between;
@@ -235,27 +228,44 @@ body.dark .button.outline:hover {
 .entry .left {
   flex: 1;
   font-size: 15px;
-  color: #444;
 }
 .entry .right {
   flex: 2;
   font-size: 15px;
-  color: #333;
 }
 
 /* Lists */
-.skill-list,
-.tool-list {
+.skill-list, .tool-list {
   list-style: none;
   padding-left: 0;
 }
-.skill-list li,
-.tool-list li {
+.skill-list li, .tool-list li {
   margin-bottom: 8px;
   font-size: 15px;
 }
 
-/* Responsive Fixes */
+/* Dark mode for resume */
+body.dark .resume-box {
+  background: #1c1c1c;
+  color: #eee;
+}
+body.dark .resume-box h2,
+body.dark .entry .left,
+body.dark .entry .right {
+  color: #eee;
+}
+body.dark .pill-download {
+  background: #333;
+  color: #eee;
+}
+body.dark .pill-download:hover {
+  background: #555;
+}
+body.dark .simple-nav nav a {
+  color: #ccc;
+}
+
+/* === Responsive === */
 @media (max-width: 768px) {
   .resume-container {
     padding: 0 15px;
@@ -267,32 +277,4 @@ body.dark .button.outline:hover {
   .pill-download {
     margin-top: 10px;
   }
-}
-
-/* === Resume Dark Mode === */
-.resume-page.dark {
-  background: #111;
-  color: #eee;
-}
-.resume-page.dark .resume-box {
-  background: #1f1f1f;
-  color: #eee;
-}
-.resume-page.dark .pill-download {
-  background: #333;
-  color: #fff;
-}
-.resume-page.dark .pill-download:hover {
-  background: #555;
-}
-.resume-page.dark .simple-nav nav a {
-  color: #ccc;
-}
-.resume-page.dark .resume-box h2,
-.resume-page.dark .entry,
-.resume-page.dark .entry .left,
-.resume-page.dark .entry .right,
-.resume-page.dark .skill-list li,
-.resume-page.dark .tool-list li {
-  color: #eee;
 }
