@@ -36,7 +36,7 @@
     </div>
   </main>
 
-  <!-- Particle Effect -->
+  <!-- Particle Effect with Forced White Background -->
   <script>
     particlesJS("particles-js", {
       particles: {
@@ -72,6 +72,14 @@
       },
       retina_detect: true
     });
+
+    // Force white background for dynamically created canvas
+    setTimeout(() => {
+      const canvas = document.querySelector("#particles-js canvas");
+      if (canvas) {
+        canvas.style.backgroundColor = "#ffffff";
+      }
+    }, 100);
   </script>
 
 </body>
