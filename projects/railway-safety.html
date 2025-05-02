@@ -1,35 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Railway Safety Project</title>
-  <link rel="stylesheet" href="../assets/style.css">
+  <meta charset="UTF-8" />
+  <title>Railway Safety Analysis | Shrasth Kumar</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
-<body>
-  <h1>Railway Safety Analysis</h1>
+<body class="resume-page">
 
-  <p><strong>Role:</strong> Data Analyst | <strong>Tools:</strong> Python, Tableau, Folium</p>
+  <!-- Top Navigation -->
+  <header class="simple-nav">
+    <div class="nav-left">
+      <a href="../index.html">Home</a>
+      <a href="../resume.html">Resume</a>
+    </div>
+    <div class="nav-right">
+      <a class="pill-download" href="https://github.com/shrasth/Exploring-and-Predicting-Rail-Occurrences-in-Canada" target="_blank">
+        <i class="fab fa-github"></i> View GitHub Repo
+      </a>
+    </div>
+  </header>
 
-  <p>This project explores over 20 years of rail incident data in Canada. Using Python and SQL for data cleaning and Tableau for interactive dashboards, the goal was to help stakeholders visualize risk over time.</p>
+  <main class="resume-container">
+    <h1>Exploring and Predicting Rail Occurrences in Canada</h1>
 
-  <h2>📊 Tableau Dashboard</h2>
-  <iframe src="https://public.tableau.com/views/Final_17438110426760/FinalIncident?:embed=true&:display_count=yes"
-          width="100%" height="600px" style="border:none;"></iframe>
+    <section class="resume-box">
+      <h2>Overview</h2>
+      <p>
+        This project explores and analyzes over two decades of Canadian rail incident data to identify trends, risk factors, and patterns across provinces and incident types.
+        The goal was to build an interactive dashboard and apply predictive modeling to forecast potential high-risk areas.
+      </p>
+    </section>
 
-  <h2>🧭 Interactive Map</h2>
-  <iframe src="../dashboards/map-railway.html" width="100%" height="500px"></iframe>
+    <section class="resume-box">
+      <h2>Key Highlights</h2>
+      <ul class="skill-list">
+        <li>📌 Used Python (Pandas, Seaborn) to clean and analyze Transport Canada rail data</li>
+        <li>📊 Built an interactive Tableau dashboard to visualize incident trends by location, cause, and type</li>
+        <li>🧠 Applied Random Forest and XGBoost to classify high-risk zones with accuracy</li>
+        <li>📍 Mapped occurrences using Folium & GeoJSON overlays</li>
+      </ul>
+    </section>
 
-  <h2>🧪 Python Snippet</h2>
-  <pre>
-import pandas as pd
-import matplotlib.pyplot as plt
+    <section class="resume-box">
+      <h2>Dashboards & Visuals</h2>
+      <p>Embedded views or screenshots from Tableau or Python-generated charts can go here.</p>
+      <!-- Placeholder image or iframe -->
+      <img src="../assets/images/rail-dashboard-sample.png" alt="Rail Dashboard Sample" style="max-width:100%; border-radius: 8px;" />
+    </section>
 
-df = pd.read_csv("rail_incidents.csv")
-plt.hist(df['year'], bins=20)
-plt.title("Incidents Over Time")
-plt.show()
-  </pre>
+    <section class="resume-box">
+      <h2>Tools & Libraries Used</h2>
+      <ul class="tool-list">
+        <li>Python (Pandas, NumPy, Matplotlib, Seaborn)</li>
+        <li>Tableau (Interactive dashboard)</li>
+        <li>Folium (Geospatial mapping)</li>
+        <li>Scikit-learn, XGBoost</li>
+      </ul>
+    </section>
+  </main>
 
-  <a href="../projects.html">← Back to Projects</a>
 </body>
 </html>
