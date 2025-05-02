@@ -182,6 +182,12 @@ body.dark .button.outline:hover {
   color: #0057d9;
   font-weight: 500;
 }
+.resume-page.dark .simple-nav nav a {
+  color: #88c3ff; /* brighter blue for dark mode */
+}
+.resume-page.dark .simple-nav nav a:hover {
+  color: #ffffff;
+}
 .simple-nav nav a:hover {
   text-decoration: underline;
 }
