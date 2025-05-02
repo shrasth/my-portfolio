@@ -263,6 +263,13 @@ body.resume-page.dark {
 .resume-page.dark .entry .right {
   color: #ccc;
 }
-.resume-page.dark .simple-nav nav a {
-  color: #88c0ff;
+.resume-page.dark .simple-nav nav a,
+.resume-page.dark .simple-nav nav a:visited {
+  color: #88c0ff !important;
+  text-decoration: none;
+}
+
+.resume-page.dark .simple-nav nav a:hover {
+  color: #ffffff !important;
+  text-decoration: underline;
 }
