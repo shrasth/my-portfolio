@@ -6,130 +6,154 @@
   <link rel="stylesheet" href="../assets/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #fff;
-      color: #333;
-    }
-
-    .project-container {
+    .resume-container {
       max-width: 1000px;
       margin: 40px auto;
       padding: 0 20px;
     }
 
-    .project-container h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
+    .resume-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+      margin-bottom: 35px;
     }
 
-    .project-container p {
-      line-height: 1.6;
-    }
-
-    header.simple-nav {
+    .simple-nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 10px 30px;
       background: #fff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.06);
     }
 
-    header.simple-nav a {
+    .simple-nav .nav-left a {
       margin-right: 20px;
       text-decoration: none;
       color: #0057d9;
       font-weight: 500;
     }
 
-    header.simple-nav a:hover {
-      text-decoration: underline;
+    .pill-download {
+      padding: 10px 20px;
+      background: #0057d9;
+      color: white;
+      border-radius: 999px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .pill-download i {
+      margin-right: 8px;
+    }
+
+    .pill-download:hover {
+      background: #003ea1;
     }
 
     .tableauPlaceholder {
-      margin-top: 30px;
-    }
-
-    .section-heading {
-      margin-top: 40px;
-      font-size: 20px;
-      font-weight: 600;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 5px;
+      margin-top: 20px;
     }
   </style>
 </head>
-<body>
+<body class="resume-page">
 
   <!-- Top Navigation -->
   <header class="simple-nav">
-    <div>
+    <div class="nav-left">
       <a href="../index.html">Home</a>
       <a href="../resume.html">Resume</a>
-      <a href="../projects.html">All Projects</a>
+    </div>
+    <div class="nav-right">
+      <a class="pill-download" href="https://github.com/shrasth/Exploring-and-Predicting-Rail-Occurrences-in-Canada" target="_blank">
+        <i class="fab fa-github"></i> View GitHub Repo
+      </a>
     </div>
   </header>
 
-  <main class="project-container">
-    <h1>Railway Safety Analysis</h1>
+  <main class="resume-container">
+    <h1>Exploring and Predicting Rail Occurrences in Canada</h1>
 
-    <p>
-      This project analyzes over 20 years of Canadian rail incident data to uncover patterns, regional risks, and trends in occurrence types.
-      Data was cleaned and pre-processed using Python and SQL, followed by visualization in Tableau to aid in data-driven safety insights.
-    </p>
+    <section class="resume-box">
+      <h2>Overview</h2>
+      <p>
+        This project explores and analyzes over two decades of Canadian rail incident data to identify trends, risk factors, and patterns across provinces and incident types.
+        The goal was to build an interactive dashboard and apply predictive modeling to forecast potential high-risk areas.
+      </p>
+    </section>
 
-    <p>
-      Key deliverables include exploratory analysis, geospatial risk mapping, and interactive dashboards tailored for rail safety investigators and policy teams.
-    </p>
+    <section class="resume-box">
+      <h2>Key Highlights</h2>
+      <ul class="skill-list">
+        <li>📌 Used Python (Pandas, Seaborn) to clean and analyze Transport Canada rail data</li>
+        <li>📊 Built an interactive Tableau dashboard to visualize incident trends by location, cause, and type</li>
+        <li>🧠 Applied Random Forest and XGBoost to classify high-risk zones with accuracy</li>
+        <li>📍 Mapped occurrences using Folium & GeoJSON overlays</li>
+      </ul>
+    </section>
 
-    <h2 class="section-heading">Dashboards & Visuals</h2>
+    <section class="resume-box">
+      <h2>Dashboards & Visuals</h2>
 
-    <!-- Tableau Dashboard Embed (Full Width) -->
-    <div class='tableauPlaceholder' id='viz1746221510753' style='position: relative; width: 100%;'>
-      <noscript>
-        <a href='#'>
-          <img alt='Rail Incidents'
-            src='https://public.tableau.com/static/images/Fi/Final_17438110426760/FinalIncident/1_rss.png'
-            style='border: none' />
-        </a>
-      </noscript>
-      <object class='tableauViz' style='display:none;'>
-        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-        <param name='embed_code_version' value='3' />
-        <param name='site_root' value='' />
-        <param name='name' value='Final_17438110426760/FinalIncident' />
-        <param name='tabs' value='no' />
-        <param name='toolbar' value='yes' />
-        <param name='static_image' value='https://public.tableau.com/static/images/Fi/Final_17438110426760/FinalIncident/1.png' />
-        <param name='animate_transition' value='yes' />
-        <param name='display_static_image' value='yes' />
-        <param name='display_spinner' value='yes' />
-        <param name='display_overlay' value='yes' />
-        <param name='display_count' value='yes' />
-        <param name='language' value='en-US' />
-      </object>
-    </div>
+      <!-- Tableau Dashboard Embed (Interactive) -->
+      <div class='tableauPlaceholder' id='viz1746221510753' style='position: relative; width: 100%;'>
+        <noscript>
+          <a href='#'>
+            <img alt='Rail Incidents'
+              src='https://public.tableau.com/static/images/Fi/Final_17438110426760/FinalIncident/1_rss.png'
+              style='border: none' />
+          </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='Final_17438110426760/FinalIncident' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/Fi/Final_17438110426760/FinalIncident/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+        </object>
+      </div>
 
-    <script type='text/javascript'>
-      var divElement = document.getElementById('viz1746221510753');
-      var vizElement = divElement.getElementsByTagName('object')[0];
-      if (divElement.offsetWidth > 800) {
-        vizElement.style.width = '100%';
-        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
-      } else if (divElement.offsetWidth > 500) {
-        vizElement.style.width = '100%';
-        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
-      } else {
-        vizElement.style.width = '100%';
-        vizElement.style.height = '2127px';
-      }
-      var scriptElement = document.createElement('script');
-      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);
-    </script>
+    </section>
 
+    <section class="resume-box">
+      <h2>Tools & Libraries Used</h2>
+      <ul class="tool-list">
+        <li>Python (Pandas, NumPy, Matplotlib, Seaborn)</li>
+        <li>Tableau (Interactive dashboard)</li>
+        <li>Folium (Geospatial mapping)</li>
+        <li>Scikit-learn, XGBoost</li>
+      </ul>
+    </section>
   </main>
+
+  <!-- Tableau Embed Script -->
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1746221510753');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    if (divElement.offsetWidth > 800) {
+      vizElement.style.width = '100%';
+      vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    } else if (divElement.offsetWidth > 500) {
+      vizElement.style.width = '100%';
+      vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    } else {
+      vizElement.style.width = '100%';
+      vizElement.style.height = '2127px';
+    }
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
 </body>
 </html>
