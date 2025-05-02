@@ -15,10 +15,10 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: #ffffff; /* FIX: Set white background for particles canvas */
+  background-color: #ffffff; /* ensure light background */
 }
 
-/* Ensure canvas inside particles.js respects white background */
+/* Also target canvas inside particles.js */
 #particles-js canvas {
   background-color: #ffffff !important;
 }
