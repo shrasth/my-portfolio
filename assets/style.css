@@ -264,3 +264,18 @@ body.dark .button.outline:hover {
     margin-top: 10px;
   }
 }
+
+.resume-page.dark .resume-box {
+  background: #1f1f1f;
+  color: #eee;
+}
+.resume-page.dark .pill-download {
+  background: #333;
+  color: #fff;
+}
+.resume-page.dark .pill-download:hover {
+  background: #555;
+}
+.resume-page.dark .simple-nav nav a {
+  color: #ccc;
+}
