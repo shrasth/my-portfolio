@@ -18,7 +18,7 @@ body {
   background: transparent;
 }
 
-/* === Homepage Only === */
+/* === Homepage Layout === */
 .centered-hero {
   text-align: center;
   padding: 100px 20px 60px;
@@ -141,6 +141,7 @@ body {
   color: #0057d9;
   font-weight: 500;
 }
+
 .simple-nav nav a:hover {
   text-decoration: underline;
 }
@@ -154,6 +155,7 @@ body {
   text-decoration: none;
   transition: background 0.3s ease;
 }
+
 .pill-download:hover {
   background: #003ea1;
 }
@@ -165,6 +167,7 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
   margin-bottom: 35px;
 }
+
 .resume-box h2 {
   margin-top: 0;
 }
@@ -175,11 +178,13 @@ body {
   gap: 30px;
   margin-bottom: 20px;
 }
+
 .entry .left {
   flex: 1;
   font-size: 15px;
   color: #444;
 }
+
 .entry .right {
   flex: 2;
   font-size: 15px;
@@ -191,8 +196,29 @@ body {
   list-style: none;
   padding-left: 0;
 }
+
 .skill-list li,
 .tool-list li {
   margin-bottom: 8px;
   font-size: 15px;
+}
+
+/* === Responsive Tweaks === */
+@media (max-width: 768px) {
+  .resume-container {
+    padding: 0 15px;
+  }
+
+  .simple-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pill-download {
+    margin-top: 10px;
+  }
+
+  .entry {
+    flex-direction: column;
+  }
 }
