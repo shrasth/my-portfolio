@@ -55,13 +55,12 @@
 
     .tableauPlaceholder {
       margin-top: 20px;
-      width: 100%;
-      position: relative;
     }
 
-    .tableauViz {
-      width: 100%;
-      border: none;
+    .dashboard-section {
+      margin: 60px auto;
+      padding: 0 10px;
+      text-align: center;
     }
   </style>
 </head>
@@ -101,9 +100,11 @@
       </ul>
     </section>
 
-    <section class="resume-box">
+    <section class="dashboard-section">
       <h2>Dashboards & Visuals</h2>
-      <div class='tableauPlaceholder' id='viz1746221510753'>
+
+      <!-- Tableau Dashboard Embed (Responsive) -->
+      <div class='tableauPlaceholder' id='viz1746221510753' style='position: relative; width: 100%; max-width: 1000px; margin: 0 auto;'>
         <noscript>
           <a href='#'>
             <img alt='Rail Incidents'
@@ -111,7 +112,7 @@
               style='border: none; width: 100%;' />
           </a>
         </noscript>
-        <object class='tableauViz'>
+        <object class='tableauViz' style='width: 100%; height: 860px; display: block;'>
           <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
           <param name='embed_code_version' value='3' />
           <param name='site_root' value='' />
@@ -140,29 +141,12 @@
     </section>
   </main>
 
-  <!-- Responsive Tableau Script -->
+  <!-- Tableau Embed Script -->
   <script type='text/javascript'>
-    const divElement = document.getElementById('viz1746221510753');
-    const vizElement = divElement.getElementsByTagName('object')[0];
+    var divElement = document.getElementById('viz1746221510753');
+    var vizElement = divElement.getElementsByTagName('object')[0];
     vizElement.style.display = "block";
-
-    const containerWidth = divElement.offsetWidth;
-
-    if (containerWidth > 1400) {
-      vizElement.style.height = "880px";
-    } else if (containerWidth > 1000) {
-      vizElement.style.height = "780px";
-    } else if (containerWidth > 800) {
-      vizElement.style.height = "680px";
-    } else if (containerWidth > 600) {
-      vizElement.style.height = "580px";
-    } else {
-      vizElement.style.height = "480px";
-    }
-
-    vizElement.style.width = "100%";
-
-    const scriptElement = document.createElement('script');
+    var scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
     vizElement.parentNode.insertBefore(scriptElement, vizElement);
   </script>
