@@ -219,3 +219,38 @@ body {
     align-self: flex-start;
   }
 }
+
+/* === Python Charts Side-by-Side === */
+.grid-charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.chart-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.chart-box img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.chart-box p {
+  margin-top: 0;
+  font-size: 15px;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Responsive Fix for smaller screens */
+@media (max-width: 900px) {
+  .grid-charts {
+    grid-template-columns: 1fr;
+  }
+}
