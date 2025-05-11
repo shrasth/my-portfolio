@@ -57,23 +57,28 @@
       margin-top: 20px;
     }
 
-    .side-by-side-charts {
-      display: flex;
+    .chart-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 30px;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      align-items: start;
     }
 
-    .side-by-side-charts div {
-      flex: 1;
-      min-width: 300px;
-    }
-
-    .side-by-side-charts img {
+    .chart-box img {
       width: 100%;
       border-radius: 8px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.08);
       margin-bottom: 12px;
+    }
+
+    .chart-box p {
+      font-size: 15px;
+    }
+
+    @media (max-width: 1000px) {
+      .chart-grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     iframe.folium-map {
@@ -151,14 +156,14 @@
 
     <section class="resume-box">
       <h2>Python Visualizations</h2>
-      <div class="side-by-side-charts">
-        <div>
+      <div class="chart-grid">
+        <div class="chart-box">
           <img src="../assets/images/top_occurences.png" alt="Top Occurrence Types" />
           <p>
             📊 This chart highlights the most frequent types of railway occurrences across Canada, emphasizing derailments and crossings as key safety concerns.
           </p>
         </div>
-        <div>
+        <div class="chart-box">
           <img src="../assets/images/top_activity_types.png" alt="Top Activity Types" />
           <p>
             ⚙️ Shows the top activities during which incidents occurred, with 'Proceeding' being the most incident-prone operational state.
